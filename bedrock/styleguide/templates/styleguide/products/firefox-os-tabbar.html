@@ -1,0 +1,126 @@
+{% extends "styleguide/base.html" %}
+
+{% block guide_logo %}{{ media('/img/styleguide/mozilla-dark.png') }}{% endblock %}
+
+{% block body_class %}
+  {{ super() }}
+  dark firefox-os-tabbar
+{% endblock %}
+
+{% set page_title = 'Firefox OS TabBar, ToolBar and Filters' %}
+{% block content_area %}
+
+<section id="basics">
+  <h2>Basics</h2>
+  <p>TabBars, ToolBars and Filters are main navigation elements affecting the contents of the screen they are used on. By design they are as neutral and simple as possible assuring both clarity and legibility. The background of TabBars and Filters are opaque as they change the content view of the screen. In contrast, ToolBars employ a slightly transparent background allowing the content to subtly be seen underneath. Action icons are used on ToolBars which affect that content on screen.</p>
+</section>
+
+<section id="tabbar">
+  <h2>TabBar</h2>
+  <p>The TabBar is a solid black rectangle that is 4 rem in height and sits at the bottom of the screen. Action icons appear within the TabBar allowing the user to navigate between different sections of certain apps.</p>
+  <p>The maximum amount of action icons on a normal screen device is 5. There are two variations of icon distribution: Equal and Alternate. Equal distribution is used when the TabBar contains similar actions, while the alternate groups icons with similar actions together.</p>
+  <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/tabbar.png') }}" alt="" />
+</section>
+
+<section id="toolbar">
+  <h2>ToolBar</h2>
+  <p>The ToolBar is a black rectangle (set to 85% opacity) that is 4.5 rem in height and sits at the bottom of the screen. Action icons are used on the ToolBar to represent a variety of actions that have the ability to affect the state of the particular screen they are found on.</p>
+  <p>Similar to TabBars, the maximum amount of icons to be used on a normal screen device is 5. There are two kinds of icon distribution, equal and alternate. Equal distribution is used when the ToolBar contains similar actions, while the alternate groups icons with similar actions together.</p>
+  <figure>
+    <h5>Equal icon distribution (5 items)</h5>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-5-idle.png') }}" alt="" />
+    <figcaption>{{ _('Idle') }}</figcaption>
+  </figure>
+  <figure>
+    <h5>Equal icon distribution (4 items)</h5>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-4-idle.png') }}" alt="" />
+    <figcaption>{{ _('Idle') }}</figcaption>
+  </figure>
+  <figure>
+    <h5>Equal icon distribution (3 items)</h5>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-3-idle.png') }}" alt="" />
+    <figcaption>{{ _('Idle') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-5-pressed.png') }}" alt="" />
+    <figcaption>{{ _('Pressed') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-4-pressed.png') }}" alt="" />
+    <figcaption>{{ _('Pressed') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-3-pressed.png') }}" alt="" />
+    <figcaption>{{ _('Pressed') }}</figcaption>
+  </figure>
+
+  <figure>
+    <h5>Alternate icon distribution (Example (01)</h5>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-icon-idle.png') }}" alt="" />
+    <figcaption>{{ _('Idle') }}</figcaption>
+  </figure>
+  <figure>
+    <h5>Alternate icon distribution (Example (02)</h5>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-icon-idle-alt.png') }}" alt="" />
+    <figcaption>{{ _('Idle') }}</figcaption>
+  </figure>
+  <figure class="newrow">
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-icon-pressed.png') }}" alt="" />
+    <figcaption>{{ _('Pressed') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-icon-pressed-alt.png') }}" alt="" />
+    <figcaption>{{ _('Pressed') }}</figcaption>
+  </figure>
+
+  <figure class="newrow">
+    <h5>ToolBar structure for alternate distribution</h5>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/toolbar-structure.png') }}" alt="" />
+  </figure>
+
+
+  <p>When distributing the icon unevenly, the bar splits into 5 columns and icons are grouped together by type of action.</p>
+</section>
+
+<section id="filters">
+  <h2>Filters</h2>
+  <p>Filters can be placed on the top or bottom of the screen, depending on the scenario for use. The selected filter is white and connects with the content on screen. Unselected filters are light grey and appear to sit behind the selected tab.</p>
+  <figure>
+    <figcaption>{{ _('Top filters') }}</figcaption>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/top-filters.png') }}" alt="" />
+  </figure>
+  <figure>
+    <figcaption>{{ _('Bottom filters (maximum amount)') }}</figcaption>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/bottom-filters.png') }}" alt="" />
+  </figure>
+</section>
+
+<section id="examples">
+  <h2>Usage Examples</h2>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/example-3-actions.png') }}" alt="" />
+    <figcaption>{{ _('TabBar with 3 action icons') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/example-5-actions.png') }}" alt="" />
+    <figcaption>{{ _('TabBar with 5 action icons') }}</figcaption>
+  </figure>
+  <figure class="newrow">
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/example-top-filters.png') }}" alt="" />
+    <figcaption>{{ _('Top filters') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/example-bottom-filters.png') }}" alt="" />
+    <figcaption>{{ _('Bottom filters') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/tabbar/example-normal.png') }}" alt="" />
+    <figcaption>{{ _('Toolbar normal distribution') }}</figcaption>
+  </figure>
+</section>
+
+<section id="downloads">
+  <p>You can download the Firefox OS Stencil PSD <a href="https://mozilla.box.com/s/5ucf52a98q1rd20eu5lm">here</a>.</p>
+</section>
+
+{% endblock %}

@@ -1,0 +1,92 @@
+{% extends "styleguide/base.html" %}
+
+{% block guide_logo %}{{ media('/img/styleguide/mozilla-dark.png') }}{% endblock %}
+
+{% block body_class %}
+  {{ super() }}
+  dark firefox-os-switcher
+{% endblock %}
+
+{% set page_title = 'Firefox OS CheckBoxes, Switchers and Sliders' %}
+{% block content_area %}
+
+<section id="basics">
+  <h2>Basics</h2>
+  <p>Check boxes, switches and sliders have been designed to help aid in the selection of elements. The situation in which one is needed will determine which type needs to be used.</p>
+</section>
+
+<section id="check_boxes">
+  <h2>Check Boxes</h2>
+  <p>Check boxes are used to select multiple items within a list while editing. A variety of actions can be applied to selected items such as, marking, moving, downloading, etc. Check boxes appear in blue for these types of actions. When used to select items to be deleted they are red. Check boxes are usually located on the left side of the screen.</p>
+  <figure>
+    <figcaption>{{ _('Check Box (Idle)') }}</figcaption>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/checkbox-idle.png') }}" alt="" />
+  </figure>
+  <figure>
+    <figcaption>{{ _('Check Box (Delete)') }}</figcaption>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/checkbox-delete.png') }}" alt="" />
+  </figure>
+</section>
+
+<section id="radio_buttons">
+  <h2>Radio Buttons</h2>
+  <p>Radio Buttons are used as unique selectors on a list.</p>
+  <figure>
+    <figcaption>{{ _('Radio buttons') }}</figcaption>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/radio-buttons.png') }}" alt="" />
+  </figure>
+</section>
+
+<section id="toggle_buttons">
+  <h2>Toggle Buttons</h2>
+  <p>Toggles turn options and preferences ON and OFF.</p>
+  <figure>
+    <figcaption>{{ _('Toggles') }}</figcaption>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/toggles.png') }}" alt="" />
+  </figure>
+</section>
+
+<section id="ticks">
+  <h2>Ticks</h2>
+  <p>Ticks are mainly used on selection overlays. The on states is denoted with a check mark, while the off state is invisible.</p>
+  <figure>
+    <figcaption>{{ _('Ticks') }}</figcaption>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/ticks.png') }}" alt="" />
+  </figure>
+</section>
+
+<section id="sliders_handlers">
+  <h2>Sliders and Handlers</h2>
+  <p>Sliders can be used to control functions where values increase/decrease such as volume and brightness. Handlers are outlined in blue when pressed.</p>
+  <figure>
+    <figcaption>{{ _('Sliders and Handlers') }}</figcaption>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/sliders.png') }}" alt="" />
+  </figure>
+</section>
+
+
+<section id="examples">
+  <h2>Usage Examples</h2>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/example-red-checkbox.png') }}" alt="" />
+    <figcaption>{{ _('Red check boxes for deleting') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/example-toggle.png') }}" alt="" />
+    <figcaption>{{ _('Toggle ON and OFF') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/example-tick.png') }}" alt="" />
+    <figcaption>{{ _('Tick for single selecting') }}</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ media('/img/styleguide/products/firefoxos/switchers/example-slider.png') }}" alt="" />
+    <figcaption>{{ _('Brightness slider') }}</figcaption>
+  </figure>
+</section>
+
+<section id="downloads">
+  <p>You can download the Firefox OS Stencil PSD <a href="https://mozilla.box.com/s/5ucf52a98q1rd20eu5lm">here</a>.</p>
+</section>
+
+{% endblock %}

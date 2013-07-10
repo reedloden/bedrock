@@ -1,97 +1,6 @@
 @import "../styleguide/styleguide.less";
 
-/* {{{ Firefox OS app icons */
-
-.firefox-os-icons {
-    #basics {
-        .divider-dark;
-        .clearfix;
-        h2 {
-            .span_guide(12);
-            margin-bottom: @baseLine;
-        }
-        #shape,
-        #shadow {
-            p {
-                .span_guide(12);
-                margin-bottom: @baseLine;
-            }
-        }
-    }
-    #silhouette {
-        .clearfix;
-        .divider-dark;
-        h2 {
-            margin-bottom: @baseLine;
-        }
-        h3,
-        .intro {
-            .span_guide(12);
-        }
-        #do,
-        #do-not {
-            clear: both;
-        }
-    }
-    #circle {
-        .clearfix;
-        .divider-dark;
-        clear: both;
-        .intro,
-        h2 {
-            margin-bottom: @baseLine;
-        }
-        h3 {
-            .span_guide(12);
-        }
-        #circle-c {
-            h3 {
-                margin-bottom: @baseLine;
-            }
-            p {
-                .span_guide(12);
-            }
-        }
-    }
-    #examples {
-        .clearfix;
-        .divider-dark;
-        h2 {
-            .span_guide(12);
-            margin-bottom: @baseLine;
-        }
-        div {
-            clear: both;
-        }
-    }
-    figure {
-        .span_guide(3);
-        margin-top: @baseLine;
-        margin-bottom: (2 * @baseLine);
-        figcaption {
-            color: @darkThemeText;
-            margin: (@baseLine / 2) auto;
-        }
-    }
-
-    #downloads {
-        .intro {
-            .span_guide(12);
-        }
-        .download-group {
-            .span_guide(3);
-            p {
-                margin-bottom: 0;
-            }
-        }
-        #icon-circle {
-            .span_guide(4);
-        }
-    }
-}
-
-/* }}} */
-/* {{{ Firefox OS action icons */
+/* {{{ Firefox OS Action Icons */
 
 .firefox-os-action-icons {
     #content_area {
@@ -286,6 +195,559 @@
         }
         .download-group {
             .span_guide(3);
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS App Icons */
+
+.firefox-os-icons {
+    #basics {
+        .divider-dark;
+        .clearfix;
+        h2 {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+        #shape,
+        #shadow {
+            p {
+                .span_guide(12);
+                margin-bottom: @baseLine;
+            }
+        }
+    }
+    #silhouette {
+        .clearfix;
+        .divider-dark;
+        h2 {
+            margin-bottom: @baseLine;
+        }
+        h3,
+        .intro {
+            .span_guide(12);
+        }
+        #do,
+        #do-not {
+            clear: both;
+        }
+    }
+    #circle {
+        .clearfix;
+        .divider-dark;
+        clear: both;
+        .intro,
+        h2 {
+            margin-bottom: @baseLine;
+        }
+        h3 {
+            .span_guide(12);
+        }
+        #circle-c {
+            h3 {
+                margin-bottom: @baseLine;
+            }
+            p {
+                .span_guide(12);
+            }
+        }
+    }
+    #examples {
+        .clearfix;
+        .divider-dark;
+        h2 {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+        div {
+            clear: both;
+        }
+    }
+    figure {
+        .span_guide(3);
+        margin-top: @baseLine;
+        margin-bottom: (2 * @baseLine);
+        figcaption {
+            color: @darkThemeText;
+            margin: (@baseLine / 2) auto;
+        }
+    }
+    #downloads {
+        .intro {
+            .span_guide(12);
+        }
+        .download-group {
+            .span_guide(3);
+            p {
+                margin-bottom: 0;
+            }
+        }
+        #icon-circle {
+            .span_guide(4);
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS Backgrounds */
+
+.firefox-os-backgrounds {
+    #basics {
+        .divider-dark;
+        .clearfix;
+        h2, p {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+    }
+    #usage_buttons,
+    #utilitarian_screens,
+    #usage_examples {
+        h2, h3 {
+            .span_guide(12);
+            margin: 20px 10px;
+        }
+    }
+    figure {
+        .span_guide(4);
+        margin-top: @baseLine;
+        margin-bottom: (2 * @baseLine);
+        figcaption {
+            color: @darkThemeText;
+            margin: (@baseLine / 2) auto;
+        }
+    }
+    #downloads {
+        .span_guide(12);
+        border: 1px solid #f2f3f3;
+        p {
+            margin: @baseLine;
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS Buttons */
+
+.firefox-os-buttons {
+    #basics,
+    #action_buttons,
+    #list_buttons,
+    #special_buttons,
+    #usage_buttons {
+        .divider-dark;
+        .clearfix;
+        h2, h3, p {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+    }
+    #action_buttons,
+    #list_buttons,
+    #special_buttons {
+        img {
+            margin: 20px 0 50px 10px;
+        }
+    }
+    #list_buttons ol {
+        list-style-type: none;
+        padding: 0;
+        li {
+            background: transparent url(/media/img/styleguide/products/firefoxos/ol-list.png) no-repeat 0 5px;
+            padding: 10px 0 10px 35px;
+            &:nth-child(2) {
+                background-position: 0 -42px;
+            }
+            &:nth-child(3) {
+                background-position: 0 -91px;
+            }
+            &:nth-child(4) {
+                background-position: 0 -140px;
+            }
+        }
+    }
+    figure {
+        .span_guide(4);
+        margin-top: @baseLine;
+        margin-bottom: (2 * @baseLine);
+        figcaption {
+            color: @darkThemeText;
+            margin: (@baseLine / 2) auto;
+        }
+    }
+    #downloads {
+        .span_guide(12);
+        border: 1px solid #f2f3f3;
+        p {
+            margin: @baseLine;
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS Color Palette */
+
+.firefox-os-color-palette {
+    #basics,
+    #main_colors,
+    #all_colors,
+    #recommended_gradients,
+    #examples {
+        .divider-dark;
+        .clearfix;
+        h2, h3 {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+    }
+    #basics p,
+    #recommended_gradients p {
+        .span_guide(12);
+    }
+    #recommended_gradients h3,
+    #examples h3 {
+        margin-top: 60px;
+    }
+    #main_colors,
+    #all_colors {
+        .swatch-card {
+            .span_guide(2);
+            .swatch {
+                float: none;
+                display: table-cell;
+                vertical-align: bottom;
+                padding: 6px;
+                border: 1px solid #797d80;
+                
+                span {
+                    background-color: #000;
+                    display: table-cell;
+                    width: 110px;
+                    height: 110px;
+                    vertical-align: bottom;
+                    padding: 5px;
+                }
+            }
+            p {
+                color: #9a9ea1;
+            }
+        }
+        #swatch_00aacc .swatch span { background-color: #00aacc; }
+        #swatch_ff4e00 .swatch span { background-color: #ff4e00; }
+        #swatch_cd6723 .swatch span { background-color: #cd6723; }
+        #swatch_b90000 .swatch span { background-color: #b90000; }
+        #swatch_5f9b0a .swatch span { background-color: #5f9b0a; }
+        #swatch_000000 .swatch span { background-color: #000000; }
+        #swatch_333333 .swatch span { background-color: #333333; }
+        #swatch_2c393b .swatch span { background-color: #2c393b; }
+        #swatch_f4f4f4 .swatch span { background-color: #f4f4f4; color: #000; }
+        #swatch_eaeae7 .swatch span { background-color: #eaeae7; color: #000; }
+        #swatch_000000 .swatch span { background-color: #000000; }
+        #swatch_333333 .swatch span { background-color: #333333; }
+        #swatch_4d4d4d .swatch span { background-color: #4d4d4d; }
+        #swatch_5f5f5f .swatch span { background-color: #5f5f5f; }
+        #swatch_858585 .swatch span { background-color: #858585; }
+        #swatch_a6a6a6 .swatch span { background-color: #a6a6a6; }
+        #swatch_c7c7c7 .swatch span { background-color: #c7c7c7; color: #000; }
+        #swatch_e7e7e7 .swatch span { background-color: #e7e7e7; color: #000; }
+        #swatch_eeeeee .swatch span { background-color: #eeeeee; color: #000; }
+        #swatch_f4f4f4 .swatch span { background-color: #f4f4f4; color: #000; }
+        #swatch_ffffff .swatch span { background-color: #ffffff; color: #000; }
+        #swatch_eaeae7 .swatch span { background-color: #eaeae7; color: #000; }
+        #swatch_008eab .swatch span { background-color: #008eab; }
+        #swatch_00aacc .swatch span { background-color: #00aacc; }
+        #swatch_00caf2 .swatch span { background-color: #00caf2; }
+        #swatch_b2f2ff .swatch span { background-color: #b2f2ff; }
+        #swatch_820000 .swatch span { background-color: #820000; }
+        #swatch_b90000 .swatch span { background-color: #b90000; }
+        #swatch_ff4e00 .swatch span { background-color: #ff4e00; }
+        #swatch_cd6723 .swatch span { background-color: #cd6723; }
+        #swatch_4b780a .swatch span { background-color: #4b780a; }
+        #swatch_1c2224 .swatch span { background-color: #1c2224; }
+        #swatch_222b2d .swatch span { background-color: #222b2d; }
+        #swatch_2c393b .swatch span { background-color: #2c393b; }
+        .newrow {
+            clear: left;
+        }
+    }
+    figure {
+        .span_guide(4);
+        margin-top: @baseLine;
+        margin-bottom: (2 * @baseLine);
+        figcaption {
+            color: @darkThemeText;
+            margin: (@baseLine / 2) auto;
+        }
+    }
+    #recommended_gradients figure {
+        .span_guide(2);
+    }
+    #downloads {
+        .span_guide(12);
+        border: 1px solid #f2f3f3;
+        p {
+            margin: @baseLine;
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS Headers */
+
+.firefox-os-headers {
+    #basics,
+    #elements,
+    #examples {
+        .divider-dark;
+        .clearfix;
+        h2, h3, p {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+    }
+    #elements {
+        img.elements {
+            margin: 0 10px 20px 10px;
+        }
+        ol {
+            list-style-type: none;
+            padding: 0;
+            li {
+                background: transparent url(/media/img/styleguide/products/firefoxos/ol-list.png) no-repeat 0 10px;
+                padding: 8px 0 8px 35px;
+                &:nth-child(2) {
+                    background-position: 0 -44px;
+                }
+                &:nth-child(3) {
+                    background-position: 0 -93px;
+                }
+            }
+        }
+    }
+    figure {
+        .span_guide(4);
+        margin-top: @baseLine;
+        margin-bottom: (2 * @baseLine);
+        figcaption {
+            color: @darkThemeText;
+            margin: (@baseLine / 2) auto;
+        }
+    }
+    #downloads {
+        .span_guide(12);
+        border: 1px solid #f2f3f3;
+        p {
+            margin: @baseLine;
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS Switcher */
+
+.firefox-os-switcher {
+    #basics,
+    #check_boxes,
+    #radio_buttons,
+    #toggle_buttons,
+    #ticks,
+    #sliders_handlers,
+    #examples {
+        .divider-dark;
+        .clearfix;
+        h2, p {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+    }
+    figure {
+        .span_guide(4);
+        margin-top: @baseLine;
+        margin-bottom: (2 * @baseLine);
+        figcaption {
+            color: @darkThemeText;
+            margin: (@baseLine / 2) auto;
+        }
+    }
+    #downloads {
+        .span_guide(12);
+        border: 1px solid #f2f3f3;
+        p {
+            margin: @baseLine;
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS Input */
+
+.firefox-os-inputareas {
+    #basics,
+    #input_areas,
+    #search_areas,
+    #form_fields,
+    #examples {
+        .divider-dark;
+        .clearfix;
+        h2, p {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+    }
+    figure {
+        .span_guide(4);
+        margin-top: @baseLine;
+        margin-bottom: (2 * @baseLine);
+        figcaption {
+            color: @darkThemeText;
+            margin: (@baseLine / 2) auto;
+        }
+    }
+    figure.newrow {
+        clear: left;
+    }
+    #search_areas figure,
+    #form_fields figure {
+        margin-top: 0;
+        margin-bottom: (@baseLine /2);
+    }
+    #form_fields .column-group {
+        float: left;
+        width: 320px;
+    }
+    #downloads {
+        .span_guide(12);
+        border: 1px solid #f2f3f3;
+        p {
+            margin: @baseLine;
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS TabBar */
+
+.firefox-os-tabbar {
+    #basics,
+    #tabbar,
+    #toolbar,
+    #filters,
+    #examples {
+        .divider-dark;
+        .clearfix;
+        h2, p {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+    }
+    #tabbar img {
+        margin: 20px 0 50px 10px;
+    }
+    figure {
+        .span_guide(4);
+        margin-top: @baseLine;
+        margin-bottom: (2 * @baseLine);
+        figcaption {
+            color: @darkThemeText;
+            margin: (@baseLine / 2) auto;
+        }
+    }
+    figure.newrow {
+        clear: left;
+    }
+    #toolbar figure {
+        margin-top: 0;
+        margin-bottom: (@baseLine /2);
+        h5 {
+            margin-top: @baseLine;
+        }
+    }
+    #downloads {
+        .span_guide(12);
+        border: 1px solid #f2f3f3;
+        p {
+            margin: @baseLine;
+        }
+    }
+}
+
+/* }}} */
+/* {{{ Firefox OS Typeface */
+
+.firefox-os-typeface {
+    #basics {
+        .divider-dark;
+        .clearfix;
+        h2, p {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+        #feura_sans {
+            .span_guide(12);
+            margin-top: @baseLine;
+            h3 {
+                font-size: @baseLine;
+                margin-top: @baseLine * 2;
+                padding-bottom: 10px;
+                border-bottom: 1px #04c1e7 solid;
+            }
+            p {
+                font-size: 36px;
+            }
+        }
+    }
+    #text_styles {
+        h2, p, table {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+        table {
+            margin-top: @baseLine * 2;
+            margin-bottom: @baseLine * 3;
+            border: 1px #0fabca solid;
+            th, td {
+                padding: 20px;
+                border-top: 1px #0fabca solid;
+            }
+        }
+    }
+    #examples {
+        h2, p, img {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+        img {
+            margin-bottom: @baseLine * 3;
+        }
+    }
+    #converting {
+        h2, h3, p {
+            .span_guide(12);
+            margin-bottom: @baseLine;
+        }
+        h3 {
+            font-size: @baseLine;
+        }
+        table {
+            .span_guide(6);
+            margin-bottom: @baseLine * 2;
+            border: 1px #0fabca solid;
+            th {
+                font-weight: bold;
+            }
+            th, td {
+                text-align: center;
+                padding: 20px;
+                border-top: 1px #0fabca solid;
+            }
+        }
+    }
+    #downloads {
+        .span_guide(12);
+        border: 1px solid #f2f3f3;
+        p {
+            margin: @baseLine;
         }
     }
 }

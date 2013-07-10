@@ -72,8 +72,16 @@ all_children = [
     )),
     PageNode('Products', path='products', children=(
         PageNode('Firefox OS', path='firefoxos', children=(
+            PageNode('Color Palette', path='color-palette', template='styleguide/products/firefox-os-color.html'),
+            PageNode('Typeface', path='typeface', template='styleguide/products/firefox-os-typeface.html'),
+            PageNode('Headers', path='headers', template='styleguide/products/firefox-os-headers.html'),
+            PageNode('Backgrounds', path='backgrounds', template='styleguide/products/firefox-os-backgrounds.html'),
+            PageNode('Buttons', path='buttons', template='styleguide/products/firefox-os-buttons.html'),
+            PageNode('TabBar', path='tabbar', template='styleguide/products/firefox-os-tabbar.html'),
+            PageNode('Input Areas', path='inputareas', template='styleguide/products/firefox-os-inputareas.html'),
+            PageNode('Switcher', path='switcher', template='styleguide/products/firefox-os-switcher.html'),
+            PageNode('Action Icons', path='actionicons', template='styleguide/products/firefox-os-action-icons.html'),
             PageNode('App Icons', path='icons', template='styleguide/products/firefox-os-icons.html'),
-            PageNode('Action Icons', path='action-icons', template='styleguide/products/firefox-os-action-icons.html'),
         )),
     )),
 ]
